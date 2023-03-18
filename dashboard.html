@@ -32,7 +32,7 @@
             <div class="mr-auto"></div>
             <ul class="navbar-nav my-2 my-lg-0">
       <li class="nav-item active">
-              <a class="nav-link text-danger font-weight-bold" href="dashboard.html"> Guest Account <i class="fa fa-user-alt"></i> <span class="sr-only">(current)</span></a>
+              <a class="nav-link text-danger font-weight-bold" href="#"> Guest Account <i class="fa fa-user-alt"></i> <span class="sr-only">(current)</span></a>
             </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle d-none " href="#" id="navbarDropdown" role="button" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -57,33 +57,32 @@
             <div class="row">
                 <div class="col-12 my-3 bg-warning text-white">
                     <h3 class="card-header text-center">Please Log into our system or use the guest account</h3>
+
                 </div>
-            </div><!--end row-->
-
-            <div class="row my-4 mx-auto">
-
-                    <div class="card col-12 text-center col-md-4" style="width: 18rem;">
-                        <div class="card-body">
-                        <h5 class="card-title">Clikc Here to Add Prize Bond</h5>
-                        <a href="" class="btn btn-primary">Add Prize Bonds</a>
-                        </div>
+            </div>
+            <div class="row my-4">
+                <form class="col-md-12" >
+                    <div class="mb-3 col-md-4 mx-auto">
+                      <label for="user_name" class="form-label text-danger font-weight-bold">User ID</label>
+                      <input type="text" class="form-control" id="user_name" aria-describedby="user_name">
+                     
                     </div>
-                    <div class="card col-12 text-center col-md-4" style="width: 18rem;">
-                        <div class="card-body">
-                        <h5 class="card-title">Clikc Here to View Results</h5>
-                        <a href="" class="btn btn-primary">View Prize Bonds Result</a>
-                        </div>
+                    <div class="mb-3 col-md-4 mx-auto">
+                      <label for="user-password" class="form-label text-danger font-weight-bold">Password</label>
+                      <input type="password" class="form-control" id="user-password">
                     </div>
-                    <div class="card col-12 text-center col-md-4" style="width: 18rem;">
-                        <div class="card-body">
-                        <h5 class="card-title">Clikc Here to View Results</h5>
-                        <a href="" class="btn btn-primary">View Prize Bonds Result</a>
-                        </div>
+                    <div class="mb-3 form-check col-md-4 mx-auto">
+                      <input type="checkbox" class="form-check-input ml-3" id="remenmber_me">
+                      <label class="form-check-label ml-5" for="remenmber_me">Remember Me</label>
                     </div>
-                
-            </div><!--end row-->
+                    <div class="col-md-4 mx-auto text-center">
 
-        </div><!-- end main container -->
+                        <button type="submit" class="col-md-4 btn btn-warning text-white font-weight-bold ">Login <i class="fas fa-sign-in-alt"></i> </button>
+                    </div>
+                  </form>
+
+            </div>
+        </div>
     </main>
 
   <!-- Optional JavaScript -->
