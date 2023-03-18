@@ -32,7 +32,7 @@
             <div class="mr-auto"></div>
             <ul class="navbar-nav my-2 my-lg-0">
       <li class="nav-item active">
-              <a class="nav-link text-danger font-weight-bold" href="#"> Login <i class="fa fa-sign-in" aria-hidden="true"></i><span class="sr-only">(current)</span></a>
+              <a class="nav-link text-danger font-weight-bold" href="#"> Guest Account <i class="fa fa-user-alt"></i> <span class="sr-only">(current)</span></a>
             </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle d-none " href="#" id="navbarDropdown" role="button" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -54,22 +54,34 @@
 
     <main>
         <div class="container">
-            <form>
-                <div class="mb-3">
-                  <label for="user_name" class="form-label">Email address</label>
-                  <input type="text" class="form-control" id="user_name" aria-describedby="user_name">
-                 
+            <div class="row">
+                <div class="col-12 my-3 bg-warning text-white">
+                    <h3 class="card-header text-center">Please Log into our system or use the guest account</h3>
+
                 </div>
-                <div class="mb-3">
-                  <label for="user-password" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="user-password">
-                </div>
-                <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="remenmber_me">
-                  <label class="form-check-label" for="remenmber_me">Remember Me</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Login <i class="fas fa-sign-in-alt"></i> </button>
-              </form>
+            </div>
+            <div class="row my-4">
+                <form class="col-md-12" >
+                    <div class="mb-3 col-md-4 mx-auto">
+                      <label for="user_name" class="form-label text-danger font-weight-bold">User ID</label>
+                      <input type="text" class="form-control" id="user_name" aria-describedby="user_name">
+                     
+                    </div>
+                    <div class="mb-3 col-md-4 mx-auto">
+                      <label for="user-password" class="form-label text-danger font-weight-bold">Password</label>
+                      <input type="password" class="form-control" id="user-password">
+                    </div>
+                    <div class="mb-3 form-check col-md-4 mx-auto">
+                      <input type="checkbox" class="form-check-input ml-3" id="remenmber_me">
+                      <label class="form-check-label ml-5" for="remenmber_me">Remember Me</label>
+                    </div>
+                    <div class="col-md-4 mx-auto text-center">
+
+                        <button type="submit" class="col-md-4 btn btn-warning text-white font-weight-bold ">Login <i class="fas fa-sign-in-alt"></i> </button>
+                    </div>
+                  </form>
+
+            </div>
         </div>
     </main>
 
